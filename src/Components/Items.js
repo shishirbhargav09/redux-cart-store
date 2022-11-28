@@ -10,7 +10,7 @@ function Items() {
             style={{ width: "15rem" }}
             key={product.id}
           >
-            <img src={product.image} className="card-img-top" style={{width:'130px',height:'130px'}}alt="..." />
+            <center><img src={product.image} className="card-img-top" style={{width:'130px',height:'130px'}}alt="..." /></center>
             <div className="card-body d-flex flex-column justify-content-center">
               <h5 className="card-title">{product.title.substring(0, 20)}...</h5>
               <p className="card-text text-center">
