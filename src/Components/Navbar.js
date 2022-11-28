@@ -1,6 +1,8 @@
 import React from "react";
+import { useSelector } from 'react-redux'
 import { Link } from "react-router-dom";
 function Navbar() {
+  const items = useSelector((state) => state.cart)
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light ">
@@ -24,7 +26,7 @@ function Navbar() {
                 </Link>
               </li>
               <h3>
-                <span className="badge bg-secondary">Cart Items : 0</span>
+                <span className="badge bg-secondary">Cart Items : {items.length}</span>
               </h3>
             </ul>
           </div>

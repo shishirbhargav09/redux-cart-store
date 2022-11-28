@@ -4,10 +4,13 @@ import Navbar from './Components/Navbar'
 import Cart from './Pages/Cart';
 import Home from './Pages/Home'
 import NotFound from './Pages/NotFound';
+import { store } from './Store/store'
+import { Provider } from 'react-redux'
 
 function App() {
   return (
     <div>
+      <Provider store={store}>
       <BrowserRouter>
       <Navbar/>
       <Routes>
@@ -19,7 +22,7 @@ function App() {
         
       </Routes>
     </BrowserRouter>
-      
+    </Provider>
       
     </div>
   )
