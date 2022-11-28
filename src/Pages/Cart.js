@@ -10,6 +10,7 @@ function Cart() {
    }
   return (
     <>
+    <center><h3>Items in Your Cart</h3></center>
     {products.map((product) => { 
       return <div className='container'>
       <div className="card mb-3" style={{Width: '60%'}}>

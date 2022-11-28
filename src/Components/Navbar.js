@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from 'react-redux'
 import { Link } from "react-router-dom";
+import {HiOutlineShoppingCart} from 'react-icons/hi'
 function Navbar() {
   const items = useSelector((state) => state.cart)
   return (
@@ -8,7 +9,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-light bg-light ">
         <div className="container-fluid d-flex justify-content-between">
           <Link className="navbar-brand" to="/">
-            <h3>Redux Store</h3>
+            <h3>{<HiOutlineShoppingCart/>}Redux Store</h3>
           </Link>
 
           <div
