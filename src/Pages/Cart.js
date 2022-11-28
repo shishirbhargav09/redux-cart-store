@@ -15,17 +15,17 @@ function Cart() {
       return <div className='container'>
       <div className="card mb-3" style={{Width: '60%'}}>
   <div className="row g-0">
-    <div className="col-4">
+    <div className="col-sm-4">
      <center> <img src={product.image} style={{Width: '100px', height:'100px'}} className="img-fluid rounded-start" alt="..."/></center>
     </div>
-    <div className="col-4">
-      <div className="card-body">
+    <div className="col-sm-4">
+      <div className="card-body text-center">
         <h5 className="card-title">{product.title}</h5>
         <p className="card-text">${product.price}</p>
         </div>
         
       </div>
-      <div className="col-4 d-flex align-items-center justify-content-center">
+      <div className="col-sm-4 d-flex align-items-center justify-content-center">
       <button onClick={()=>removehandler(product.id)} className="btn btn-danger" style={{height:'40px'}}>Remove</button>
         
       </div>
