@@ -6,7 +6,7 @@ function Navbar() {
   const items = useSelector((state) => state.cart)
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light ">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
         <div className="container-fluid d-flex justify-content-between">
           <Link className="navbar-brand" to="/">
             <h3>{<HiOutlineShoppingCart/>}Redux Store</h3>

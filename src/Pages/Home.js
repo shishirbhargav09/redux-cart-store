@@ -3,7 +3,7 @@ import Items from '../Components/Items'
 
 function Home() {
   return (
-    <div>
+    <div style={{paddingTop: '4.5rem'}}>
         <Items/>
     </div>
   )

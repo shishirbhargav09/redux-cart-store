@@ -9,7 +9,7 @@ function Cart() {
     dispatch(remove(productid));
    }
   return (
-    <>
+    <div style={{paddingTop: '4.5rem'}}>
     <center><h3>Items in Your Cart</h3></center>
     {products.map((product) => { 
       return <div className='container'>
@@ -35,7 +35,7 @@ function Cart() {
 </div>
     </div>
      })}
-    </>
+    </div>
   )
 }
 
